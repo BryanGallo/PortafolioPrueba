@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- width=device-width se utiliza cuando queremos que el tamaño del ancho de mi viewport se igual al tamaño del ancho del dispositivo -->
+    <!-- initial-scale=1.0 (0 es el 0% y 1 es el 100% del tamano del dispositivo) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/estilos.css">
+    <title>Bryan Gallo</title>
+</head>
+<body>
+ 
+    <header class="header" >
+     <div class="container"><!-- Usaremos un contenedor en cada seccion para hacer mas bonita la pagina -->
+        <figure class="logo">
+            <img src="./images/logo.png" height="50px" alt="Logo de http://bryangallo.com">
+        </figure>
+        <nav class="menu">
+            <ol>
+                <li>
+                  <a class="link" href="#portafolio">Portafolio</a>
+                </li>
+                <li>
+                  <a class="link" href="#eventos">Experiencia</a>
+                </li>
+                <li>
+                  <a class="link"  href="#contacto">Trabajemos Juntos</a>
+                </li>
+            </ol>
+        </nav>
+     </div>
+    </header>
+
+    <section class="hero">  <!--Esta foto lo suelen llamar hero porque es la parte que tiene mas visibilidad en nuestro sitio Web-->
+        <div class="container">
+            <h1>Hola soy <strong>Bryan Gallo</strong>  <br>Desarrollador <strong>Front End</strong> </h1>
+            <img class="hero-image" src="../Portafolio/images/hero.jpg" width="500px" height="300px" alt="Imagen Principal del Sitio">
+        </div>
+
+    </section>
+    <!-- Seccion Portafolio -->
+    <section id="portafolio" class="portfolio" >
+        <div class="container">
+            <h2>Portafolio (Proyectos Destacados)</h2>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi Video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"><small> <strong>Fecha:</strong>22/03/2020</small></p>
+                    <p class="project-url"><small> <strong>Puedes verlo en:</strong> www.platzi.com/native</small></p>
+                    <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para ense;ar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados</p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="../Portafolio/images/platzi-video-react-native.png" width="500px" alt="Proyecto del Curso de React Native"> 
+                </figure>
+            </article>
+            <article class="project">
+                <div class="project-details">
+                    <h3 class="project-title">Platzi Video</h3>
+                    <h6 class="project-course">React Native / React</h6>
+                    <p class="project-date"><small> <strong>Fecha:</strong>22/03/2020</small></p>
+                    <p class="project-url"><small> <strong>Puedes verlo en:</strong>www.platzi.com/native</small></p>
+                    <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para ense;ar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados</p>
+                </div>
+                <figure class="project-imageContainer">
+                    <img class="project-image" src="../Portafolio/images/platzi-video-react-native.png" width="500px" alt="Proyecto del Curso de React Native"> 
+                </figure>
+            </article>
+        </div>
+    </section>
+    <!-- Seccion Experiencia -->
+    <div class="container">
+        <h2 class="event-list-title">Mas sobre mi Experiencia</h2>
+    </div>
+    <section id="eventos" class="event-list">
+        <div class="container">
+            <article class="event">
+                <figure class="event-imageCountainer">
+                    <img class="event-image" src="../Portafolio/images/platzi-conf.jpg" width="500px" alt="">
+                </figure>  
+                <div class="event-detail">
+                    <h3 class="event-title">Platzi Conf Mexico 2018</h3>
+                    <p class="event-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa rerum nisi blanditiis animi expedita, aliquid esse fuga qui porro quibusdam dolores dignissimos nostrum eveniet, hic ex odio, enim sit.</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=RW75cGvO5xY" target="_blanck">Ver Platica</a>
+                </div> 
+            </article>
+    
+            <article class="event">
+                <figure class="event-imageCountainer">
+                    <img class="event-image" src="../Portafolio/images/platzi-conf.jpg" width="500px" alt="">
+                </figure>  
+                <div class="event-detail">
+                    <h3 class="event-title">Platzi Conf Mexico 2018</h3>
+                    <p class="event-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa rerum nisi blanditiis animi expedita, aliquid esse fuga qui porro quibusdam dolores dignissimos nostrum eveniet, hic ex odio, enim sit.</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=RW75cGvO5xY" target="_blanck">Ver Platica</a>
+                </div> 
+            </article>
+    
+            <article class="event">
+                <figure class="event-imageCountainer">
+                    <img class="event-image" src="../Portafolio/images/platzi-conf.jpg" width="500px" alt="">
+                </figure>  
+                <div class="event-detail">
+                    <h3 class="event-title">Platzi Conf Mexico 2018</h3>
+                    <p class="event-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa rerum nisi blanditiis animi expedita, aliquid esse fuga qui porro quibusdam dolores dignissimos nostrum eveniet, hic ex odio, enim sit.</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=RW75cGvO5xY" target="_blanck">Ver Platica</a>
+                </div> 
+            </article>
+    
+            <article class="event">
+                <figure class="event-imageCountainer">
+                    <img class="event-image" src="../Portafolio/images/platzi-conf.jpg" width="500px" alt="">
+                </figure>  
+                <div class="event-detail">
+                    <h3 class="event-title">Platzi Conf Mexico 2018</h3>
+                    <p class="event-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ipsa rerum nisi blanditiis animi expedita, aliquid esse fuga qui porro quibusdam dolores dignissimos nostrum eveniet, hic ex odio, enim sit.</p>
+                    <a class="event-url" href="https://www.youtube.com/watch?v=RW75cGvO5xY" target="_blanck">Ver Platica</a>
+                </div> 
+            </article>
+        </div>
+        
+    </section>
+    <!-- Sección Contactos -->
+    <section id="contacto" class="contact"> <!--En 'backend' el action es importante porque es a donde vas a enviar la informacion -->
+        <div class="container">
+            <form action="" class="form-email">
+                <!-- El 'placeholder' es para dejar un texto guia y 'value' para poner un valor por defecto ejemplo value="@gmail.com"-->
+                <!-- Cuando un label en 'for' tiene igual al atributo 'id' de un input a dar click en el label va hacer enfoque en el input -->
+                <!-- Si utilizamos en el 'type' de 'input' el atributo 'datetime' y me indica opciones antes ingresadas-->
+                <!-- <label for="email"> E-mail </label> -->
+                <h3>Creamos algo juntos?</h3>
+                <input type="text" placeholder="Dejame tu E-mail" value="" id="email">
+                <button>Enviar</button>
+            </form>
+            <div class="social">
+                <a href="" class="social-link twitter"></a>
+                <a href="" class="social-link facebook"></a>
+                <a href="" class="social-link github"></a>
+                <a href="" class="social-link instangram"></a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div>
+                <p>Curso de Desarrollo Web Online <img src="./images/platzi.png" alt="Platzi" width="80px"></p>
+            </div>
+            <div class="zona">
+                <p>Diseñado con Amor <\3 <a href="https://www.facebook.com/Bryan.Gallo1995">Bryan</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

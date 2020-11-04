@@ -1,0 +1,306 @@
+/* 
+Reglas
+Selectores
+Declaraciones
+Propiedades
+Valores
+*/
+/*Selector de Etiqueta 
+header-section-article-nav
+*/
+/*Selector Descendente: va hacer un elemento hijo de algun otro elementoen este caso vamos indicar como llegar a la etiqueta a
+body -> header -> div -> nav -> ol -> li -> a
+*/
+/*Selector de id y de clase 
+id es unico de cada elemento se usa # y class podemos repetirlo segun necesitemos se lo llama con '.'
+*/
+/* Colores a usar
+gris oscuro = #1d252c
+gris claro = #626262
+gris claro = #1b2127
+celeste = #026fff
+ */
+body {
+  font-family: "Source Sans Pro";
+  margin: 0;
+}
+.header {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+}
+figure {
+  margin: 0;
+}
+
+.menu {
+  height: inherit;
+}
+
+.header ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  height: inherit;
+}
+
+.header ol li {
+  height: inherit;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+
+.hero {
+  height: 300px;
+  /* background-image: url("../images/hero.jpg"); */
+  background-color: #1b2127;
+  /* Primero el ancho luego el alto */
+  /* background-size:500px, 300px ;
+    background-repeat: no-repeat;
+    background-position-x: right; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero-image {
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fjalla One", sans-serif;
+}
+
+h1 {
+  color: white;
+  /* Propiedad para cambiar el alto de linea */
+  line-height: 1.5em;
+  font-size: 40px;
+  /* Peso de fuente 100 mas delgada y 900 mas gruesa(400 normal-600 bold)*/
+  font-weight: 400;
+  /* font-style: italic; */
+  /* Espacios entre letras */
+  /* letter-spacing: -0.2px;
+   text-transform: uppercase;
+   text-decoration:dashed ; */
+  margin: 0;
+}
+h1 strong {
+  color: #026fff;
+}
+
+.portfolio {
+  background-color: #fafafa;
+  padding: 24px;
+}
+/* H2 de portfolio */
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro";
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.project {
+  /* Tamano tipo estilo */
+  border: 1px solid black;
+  border-top-left-radius: 10px;
+  margin-bottom: 15px;
+  /* Siempre los hijos deben tener padding respecto al padre y no margin */
+  margin-bottom: 15px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.project-details {
+  width: 500px;
+}
+.project-course,
+.project-date,
+.project-url {
+  margin: 10px 0px;
+}
+.project-description {
+  font-size: 20px;
+}
+.project strong {
+  font-family: "Fjalla One", sans-serif;
+}
+.project-imageContainer {
+  width: 500px;
+}
+/* Eventos */
+.event-list-title {
+  margin-left: 20px;
+}
+.event-list {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.event {
+  margin: 10px;
+  width: 480px;
+  border-radius: 10px;
+  /* Cuando una imagen se desborda del cuadro podemos usar lo siguiente overflow que genera un scroll y cuando usamos hidden se oculta */
+  overflow: hidden;
+  background-color: #f4fbff;
+}
+.event img {
+  width: 480px;
+  height: 200px;
+  /* Para que la imagen no se dane aunque se puede comer pedazos de la imagen */
+  object-fit: cover;
+}
+.event-detail {
+  margin: 20px 40px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+  /* Utilizaremos margenes negativos para sobre montar la imagen */
+  margin-top: -40px;
+  /* como la imagen esta sobre el texto usamos position */
+  position: relative;
+  /* para alinear texto */
+  text-align: center;
+}
+.event-description {
+  text-align: left;
+}
+.event-url {
+  border: 1px solid #026fff;
+  padding: 5px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #026fff;
+}
+/* .flexbox{
+    display: flex;
+    Y para que no nos genere un scroll horizontal y baje a la siguiente linea usamos lo siguiente que por defecto esta en nowrap que sgnifica que ningun elemento caiga a la siguiente linea, eso cambiamos a wrap y bajan
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    height: 300px;
+}
+
+.box{
+    align-self se aplica a los hijos y es para que un hijo se alinie asi mismo 
+    justify-self para que los hijos se justifiquen asi mismo
+    width: 50px;
+    height: 50px;
+    margin: 2px;
+    border: 1px solid red;
+    Cuanddo usamos display:flex solo afecta a sus hijos directos y para que no se modificque el tamano cuando tengo muchos objetos le aplicamos a sus hijos directos lo siguiente donde 0 es 0% encogible y 1 100% encogible
+    flex-shrink: 0;
+} */
+
+/* Contacto */
+.contact {
+  background-color: #026fff;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-email h3 {
+  font-family: "Source Sans Pro";
+}
+.form-email input {
+  border-color: gray;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px 20px 10px 25px;
+  background-image: url("../images/envelope.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 5px;
+}
+
+.form-email button {
+  display: block;
+  margin-top: 10px;
+  background: transparent;
+  color: white;
+  padding: 10px 0px;
+  border: 1px solid;
+  border-color: white;
+  border-radius: 5px;
+  width: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.social-link {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  /* Ponermos aqui el backgroud size porque esta clase igual es utilizados por todas las etiquetas a y asi ahorramos lineas de codigo*/
+  background-size: 50px 50px;
+  margin: 0 10px;
+}
+/* si tenemos 2 clases en una mismo elementolo podemos poner otro punto y llamarlo  */
+.social-link.twitter {
+  background-image: url("../images/twitter.svg");
+}
+.social-link.facebook {
+  background-image: url("../images/facebook.svg");
+}
+.social-link.github {
+  background-image: url("../images/github.svg");
+}
+.social-link.instangram {
+  background-image: url("../images/instagram.svg");
+}
+
+/* Footer */
+.footer {
+  background-color: #1b2127;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Cuando tienes texto y los mezclas con otros tipos de elementos como por ejemplo imagenes tu puedes usar el alineado de las imagenes en este caso usamos middle*/
+.footer img {
+  vertical-align: middle;
+}
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+.zona {
+  margin-left: 400px;
+}
+.container {
+  /*inherit se utiliza para heredar estas propiedades de su padre en este caso header esto hace los cambios finales*/
+  display: inherit;
+  justify-content: inherit;
+  height: inherit;
+  align-items: inherit;
+  width: 1000px;
+  margin: 0 auto;
+  flex-shrink: inherit;
+  flex-wrap: inherit;
+  justify-content: inherit;
+}
